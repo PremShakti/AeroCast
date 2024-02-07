@@ -1,0 +1,73 @@
+.cardmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 10px;
+  height: 300px;
+  margin-top: 20px;
+  background: linear-gradient(to right, #17ead9, #6078ea);
+  color: white;
+}
+.left {
+  width: 50%;
+  height: 100%;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.left h3 {
+  font-size: 3rem;
+}
+.leftinside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.humuditi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 5px;
+  padding-top: 50px;
+}
+.humudititext {
+  font-size: 2rem;
+}
+.insidehumudity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.insidehumudity p {
+  font-size: smaller;
+}
+.humudititextlaterr {
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+.date {
+  bottom: 15px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.date p {
+  font-weight: bold;
+  font-size: 1.2rem;
+}

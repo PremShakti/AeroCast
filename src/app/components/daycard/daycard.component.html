@@ -1,0 +1,79 @@
+<!-- 
+
+
+  <div class="card mt-4">
+    <div class="card-body">
+      <h3 class="card-title">Date</h3>
+      <p class="card-text">{{data.time | date:'mediumDate' }}</p>
+    </div>
+    <div class="container mt-4">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card bg-primary text-white">
+              <div class="card-body">
+                <h3 class="card-title">Temperature</h3>
+                <p class="card-text">Average: {{ data.values.temperatureAvg }}°C</p>
+                <p class="card-text">Max: {{ data.values.temperatureMax }}°C</p>
+                <p class="card-text">Min: {{ data.values.temperatureMin }}°C</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card bg-success text-white">
+              <div class="card-body">
+                <h3 class="card-title">Humidity</h3>
+                <p class="card-text">Average: {{ data.values.humidityAvg }}%</p>
+                <p class="card-text">Max: {{ data.values.humidityMax }}%</p>
+                <p class="card-text">Min: {{ data.values.humidityMin }}%</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card bg-warning text-white">
+              <div class="card-body">
+                <h3 class="card-title">Wind</h3>
+                <p class="card-text">Average Speed: {{ data.values.windSpeedAvg }} m/s</p>
+                <p class="card-text">Max Gust: {{ data.values.windGustMax }} m/s</p>
+                <p class="card-text">Direction: {{ data.values.windDirectionAvg }}°</p>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+
+  </div> -->
+
+<div class="cardmain position-relative">
+  <div class="left">
+    <h3>{{ data.values.temperatureAvg }}°C</h3>
+    <div class="leftinside">
+      <p>Min - {{ data.values.temperatureMin }}°C</p>
+      <p>max - {{ data.values.temperatureMax }}°C</p>
+    </div>
+  </div>
+  <div class="right">
+    <div class="humuditi">
+      <p class="humudititext">{{ data.values.humidityAvg }}%</p>
+      <p class="humudititextlaterr">Humidity</p>
+      <div class="insidehumudity">
+        <p>Min - {{ data.values.humidityMin }}%</p>
+        <p>Max - {{ data.values.humidityMax }}%</p>
+      </div>
+    </div>
+    <div class="humuditi wind">
+      <p class="humudititext">{{ data.values.windSpeedAvg }} m/s</p>
+      <p class="humudititextlaterr">Wind</p>
+      <div class="insidehumudity">
+        <p>Max Gust: {{ data.values.windGustMax }} m/s</p>
+        <p>Direction {{ data.values.windDirectionAvg }}°</p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="date card-body position-absolute"
+    style="bottom: 15px; left: 15px"
+  >
+    <p class="card-text">{{ data.time | date : "mediumDate" }}</p>
+  </div>
+</div>

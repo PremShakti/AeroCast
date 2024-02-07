@@ -1,0 +1,21 @@
+<nav class="navbar bg-body-tertiary mb-4">
+  <div class="container-fluid">
+    <h1 class="navbar-brand">AeroCast</h1>
+    <form class="d-flex" role="search">
+      <input
+        class="form-control me-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+        (input)="onSearchInput($event)"
+      />
+      <button
+        class="btn btn-outline-success"
+        type="submit"
+        (click)="trigerfunctionWithData()"
+      >
+        Search
+      </button>
+    </form>
+  </div>
+</nav>

@@ -1,0 +1,37 @@
+<h1
+  class="text-center"
+  [textContent]="headline.key ? headline.key : 'India'"
+></h1>
+<div style="min-height: 100vh">
+  <div *ngIf="toplocations && toplocations.length > 0">
+    <div class="container">
+      <div class="d-flex flex-wrap gap-3">
+        <div *ngFor="let d of toplocations" class="">
+          <p
+            class="border p-2 locationnames rounded"
+            (click)="trigerLocations(d)"
+          >
+            {{ d }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="getalldata && getalldata.length > 0">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6" *ngFor="let data of getalldata">
+          <app-daycard [data]="data"></app-daycard>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="!getalldata || getalldata.length === 0"></div>
+
+  <div *ngIf="loder === true">
+    <app-spiner></app-spiner>
+  </div>
+</div>
+
+
