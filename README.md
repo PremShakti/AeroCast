@@ -1,6 +1,7 @@
 # WeatherApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+![FireShot Capture 008 - WeatherApp - aero-cast vercel app](https://github.com/PremShakti/AeroCast/assets/112472700/6d5c106a-7f1a-48f2-974f-16a5647e476a)
 
 ## Development server
 
